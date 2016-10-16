@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Welcome to Flask on OpenShift</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+</head>
+<body>
+
+<section class='container'>
+    <hgroup>
+      <h1>Welcome to Github API with AWS APP</h1>
+    </hgroup>
+	<h2>Please sign in to Github to email all members or your organization that don't have names<br>Warning, may take some time to send all emails</h2>
+    <form class="form-signin" action="{{ url_for("login") }}">
+		<button type="submit" class="btn btn-lg btn-primary" type="button">Sign in</button>
+	</form>
+
+</section>
+</body>
+</html>

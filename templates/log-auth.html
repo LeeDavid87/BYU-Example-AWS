@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Welcome to Flask on OpenShift</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+</head>
+<body>
+
+<section class='container'>
+    <hgroup>
+      <h1>Welcome     {{  user   }}</h1>
+	  <h2>Organization {{   org   }}</h2>
+	  </hgroup>
+	  <div class="row">
+		  <div class="col-sm-4">
+		  <ul>
+			<li class="list-group-item">Members in {{ org }} </li>
+			{% for key in members %}
+			 <li class="list-group-item">{{key}}</li>
+			 {% endfor %}
+		  </ul>  
+		  </div >
+		  <div class="col-sm-4">
+		  <ul>
+		    <li class="list-group-item">Members in {{ org }} without a name </li>
+			{% for key in nameless %}
+			 <li class="list-group-item">{{key}}</li>
+			 {% endfor %}
+		  </ul> 
+		    <p>Emails have been sent to all members without names</p>
+			<p>List of members without names saved on AWS S3, located here: <a href="{{link}}">{{link}}</a>
+		  </div>
+	  </div>
+    
+</section>
+</body>
+</html>
