@@ -2,7 +2,8 @@
 
 ### This is my first program I have ever written in Python. Everything done in this program was learned from the time the email was sent until now
 
-Install the following if you do not already have them installed
+Install the following if you do not already have them installed:
+
 Flask and boto
 
 Example:
