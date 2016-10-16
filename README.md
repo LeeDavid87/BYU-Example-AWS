@@ -4,8 +4,11 @@
 
 Install the following if you do not already have them installed
 Flask and boto
+
 Example:
+
 Emphasis, pip install Flask
+
 Emphasis, pip install boto
 
 Can be done with gitBash or Command line
