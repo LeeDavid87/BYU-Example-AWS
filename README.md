@@ -8,9 +8,9 @@ Flask and boto
 
 Example:
 
-Emphasis, pip install Flask
+pip install Flask
 
-Emphasis, pip install boto
+pip install boto
 
 Can be done with gitBash or Command line
 
