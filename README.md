@@ -14,7 +14,7 @@ pip install boto
 
 Can be done with gitBash or Command line
 
-Create a folder and clone the project into said folder using git bash
+Create a folder and clone the project into the newly folder using git bash
 
 once cloned, navigate to BYU-Example-AWS
 then type the command: python app.py
